@@ -23,10 +23,13 @@ It ensures message security by storing data within pixel values and requiring a 
 
 ## 📌 Installation
 1️⃣ Clone the Repository
+
 `git clone https://github.com/0xSilentPwn/StegoSecure.git`
+
 `cd StegoSecure`
 
 2️⃣ Install Required Dependencies
+
 `pip install -r requirements.txt`
 
 ## Usage
