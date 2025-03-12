@@ -64,6 +64,11 @@ Use PNG images to prevent data loss due to compression.
 Ensure the correct password is provided during decryption.
 If the message extraction fails, verify that the correct encrypted image and password are used.
 
+## ⚠️ Disclaimer
+This project is intended for **educational and ethical cybersecurity purposes only**.  
+The creator is **not responsible** for any misuse or illegal activities performed using this tool.  
+Always ensure you have **proper authorization** before testing or using steganography and encryption techniques.
+
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
