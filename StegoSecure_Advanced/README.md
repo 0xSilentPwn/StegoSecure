@@ -40,7 +40,9 @@ python stego_decrypt.py
 
 ## 🔑 Security Features
 ✅ **AES Encryption (CBC Mode)** for strong encryption.
+
 ✅ **Dual Key System** for extra security.
+
 ✅ **Steganography** to hide the encrypted message in images.
 
 ## License
