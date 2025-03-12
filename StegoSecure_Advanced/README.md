@@ -22,9 +22,9 @@ StegoSecure/
 
 ## 🚀 How to Use
 ### **Encryption**
-
+```bash
 python stego_encrypt.py
-
+```
 - Enter an **image path**.
 - Provide a **message** to hide.
 - Set **Key 1** (for AES encryption).
