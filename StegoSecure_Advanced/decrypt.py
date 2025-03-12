@@ -29,19 +29,19 @@ def decrypt_message_aes(encrypted_data, key1):
     decrypted_padded_message = decryptor.update(cipher_text) + decryptor.finalize()
     return decrypted_padded_message.rstrip().decode()
 
-def decrypt_ciphertext_from_image(image_path, decrypted_message, key2 , original_image_path="decryptedImage.png"):
+def extract_ciphertext_from_image(image_path, key2):
     img = cv2.imread(image_path)
     if img is None:
         print("Error: Image not found!")
-        return
-
+        return None
+    
     c = {i: chr(i) for i in range(255)}
-    key2_shift = sum(ord(c) for c in key2) % 255
+    key2_shift = sum(ord(c) for c in key2) % 255  # Use key2 for shifting ASCII values
     
     n, m, z = 0, 0, 0
-    message_length = img[n, m, z]  # Retrieve message length from first pixel
-    m += 1  # Move to actual message location
-
+    message_length = img[n, m, z]
+    m += 1
+    
     extracted_data = ""
     for _ in range(message_length):
         extracted_data += c.get((img[n, m, z] - key2_shift) % 255, '?')  # Reverse key2-based shift
@@ -60,9 +60,7 @@ if __name__ == "__main__":
     image_path = input("Enter encrypted image path: ")
     key2 = getpass.getpass("Enter embedding key (Key 2) to extract ciphertext: ")
     
-    encrypted_message = decrypt_ciphertext_from_image(image_path, key2)
-    print("Extracted Ciphertext:", base64.b64encode(encrypted_message).decode())
-
+    encrypted_message = extract_ciphertext_from_image(image_path, key2)
     if encrypted_message:
         key1 = getpass.getpass("Enter decryption key (Key 1) to decrypt message: ")
         try:
