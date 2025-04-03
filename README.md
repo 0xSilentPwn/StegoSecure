@@ -6,20 +6,20 @@ The tool includes both encryption (hiding messages) and decryption (extracting m
 It ensures message security by storing data within pixel values and requiring a password for decryption.
 
 ## Features
-- 🔹 Hide a secret message inside an image using pixel modifications.
-- 🔹 Retrieve the hidden message with password-based authentication.
-- 🔹 Supports lossless PNG images to prevent data loss.
-- 🔹 Keeps a backup of the original image for later retrieval.
-- 🔹 Command-line interface (CLI) for easy execution.
+🔹 Hide a secret message inside an image using pixel modifications.
+🔹 Retrieve the hidden message with password-based authentication.
+🔹 Supports lossless PNG images to prevent data loss.
+🔹 Keeps a backup of the original image for later retrieval.
+🔹 Command-line interface (CLI) for easy execution.
 
 ## 📂 Project Structure
 
-- ├── stego_encrypt.py      # Encrypting messages into images
-- ├── stego_decrypt.py      # Decrypting hidden messages from images
-- ├── PIC.png               # Sample input image
-- ├── encryptedImage.png    # Output image after encryption
-- ├── decryptedImage.png    # Backup of the original image
-- ├── README.md             # Documentation file
+├── stego_encrypt.py      # Encrypting messages into images
+├── stego_decrypt.py      # Decrypting hidden messages from images
+├── PIC.png               # Sample input image
+├── encryptedImage.png    # Output image after encryption
+├── decryptedImage.png    # Backup of the original image
+├── README.md             # Documentation file
 
 ## 📌 Installation
 1️⃣ Clone the Repository
