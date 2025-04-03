@@ -14,12 +14,17 @@ It ensures message security by storing data within pixel values and requiring a 
 
 ## 📂 Project Structure
 
+```plaintext
+stego_project/
 ├── stego_encrypt.py      # Encrypting messages into images
 ├── stego_decrypt.py      # Decrypting hidden messages from images
 ├── PIC.png               # Sample input image
 ├── encryptedImage.png    # Output image after encryption
 ├── decryptedImage.png    # Backup of the original image
 ├── README.md             # Documentation file
+├── .gitignore            # Ignore unnecessary files
+```
+
 
 ## 📌 Installation
 1️⃣ Clone the Repository
