@@ -7,9 +7,13 @@ It ensures message security by storing data within pixel values and requiring a 
 
 ## Features
 🔹 Hide a secret message inside an image using pixel modifications.
+
 🔹 Retrieve the hidden message with password-based authentication.
+
 🔹 Supports lossless PNG images to prevent data loss.
+
 🔹 Keeps a backup of the original image for later retrieval.
+
 🔹 Command-line interface (CLI) for easy execution.
 
 ## 📂 Project Structure
